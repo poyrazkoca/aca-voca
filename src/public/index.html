@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aca-Voca Search Engine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Header -->
+<header class="header">
+    <div class="header-left">
+        <img src="logo.png" alt="Logo" class="logo">
+        <span class="title-text">Academic Vocabulary Search Engine</span>
+    </div>    <nav class="header-right">
+        <div class="hamburger" id="hamburgerMenu">☰</div>
+        <div class="dropdown-menu" id="dropdownMenu">
+            <a href="../admin/admin.html">Update Vocabulary Memory</a>
+        </div>
+    </nav>
+</header>
+
+<!-- Theme Toggle -->
+<div class="theme-toggle" onclick="toggleTheme()">
+    <div class="toggle-thumb" id="themeEmoji">🌞</div>
+</div>
+
+<!-- Main Container -->
+<div class="container">
+    <p class="how-it-works">
+        How it works? Type an academic word to find formal synonyms. Use quotation marks for exact matches.
+    </p>
+    <div class="search-area">
+        <div class="search-box-group">
+            <input
+                    type="text"
+                    id="searchBox"
+                    placeholder="Search a word..."
+                    autocomplete="off"
+                    onkeydown="if(event.key==='Enter'){performSearch(this.value)}"
+            >
+            <button
+                    id="searchBtn"
+                    onclick="performSearch(document.getElementById('searchBox').value)"
+            >Search</button>
+            <div class="audio-buttons" id="audioBtns" style="display:none;">
+                <button
+                        onclick="speakWordUS(currentWord)"
+                        title="US pronunciation"
+                        id="usPronounce"
+                >Listen pronounciation 🔊</button>
+            </div>
+        </div>
+    </div>
+    <ul id="suggestions"></ul>
+    <div id="results"></div>
+    <div id="pagination"></div>
+</div>
+
+<!-- Footer Info -->
+<div id="footer-info">
+    <p>
+        In this search engine, the formal words with meaning similar to "study" are displayed if you search for the word "study".
+        The engine does not focus on technical terms, it displays non-technical terms.
+        The database consists of selected formal words, so the engine does not return rarely used garbage words or informal words.<br>
+        Hope this site will substantially improve your academic writing experience.
+    </p>
+    <p>
+        <a href="https://www.tedu.edu.tr/aykut-yildiz" target="_blank">Dr. Öğr. Üyesi Aykut Yıldız</a>
+    </p>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <p style="font-size: 0.9em;">
+        Copyright © 2025 - Academic Vocabulary - Last update date: June 2025
+    </p>
+    <p style="font-size: 0.7em;">
+        Developed by
+        <a href="https://www.linkedin.com/in/poyrazkoca/" target="_blank">Poyraz Koca</a>
+    </p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,854 @@
+-look into-talk about-investigate-inspect-study-examine-address-cover-discuss-argue-explain-elaborate on-expose-deal with-focus on
+
+-mention-analyze-clarify-concentrate on-justify-describe-present-dedicate-propose-design-illuminate-shed light on-explore-devote-unravel-report-develop-delve-capture-model-treat-solve-outline-establish
+
+-mean-imply-indicate-amount to-boil down to-be equivalent to-convey the idea-intend-signify-suggest-refer to-be defined as-correspond to-reveal
+
+-much-big-too much-dramatical-severe-vast-tremendous-heavy-significant-considerable-substantial-excessive-extensive-immense-abundant-intense-enormous-huge-serious-wide-broad-extreme-plenty of-plentiful
+
+-find-evaluate-compute-calculate-determine-obtain-derive-get-is written as-to be given by-holds true-we can write-it follows that-reduces to-yields-can be expressed as
+
+-use-apply-employ-exploit-rely on-utilize-benefit-adopt-leverage-take advantage of
+
+-end up-result in-lead to-yield-produce-reduce to-cause-initiate-converge
+
+-about-concerning-regarding-in terms of-associated with-related to-relevant to-pertinent to-involving-linked to-pertain to-on-tied to-specialized in-affiliated with-involve
+
+-set-determine-designate-specify-assign-indicate-to be indicative of-prescribe-establish
+
+-rule-dictate-govern-control-regulate-direct-manage-determine
+
+-many-multitude of-several-numerous-a great deal of-a range of-substantial amount of-considerable amount of-innumerable-various-diverse-umpteen-excessive amount of-wide variety of-large number of-great number of-high amount of-multiple-ubiquitous-plentiful-plenty of
+
+-in detail-extensive-indepth-detailed-sophisticated-comprehensive-thorough-rigorous-intricate
+
+-just-only-merely-solely-alone
+
+-show-monitor-display-exhibit-reflect-depict-illustrate-demonstrate-portray-present-embody-manifest-exemplify-indicate-expose-represent
+
+-designate-point out-indicate-show-specify-represent-imply
+
+-bring to light-shed light on-reveal-discover-disclose-expose-illuminate-unravel-clarify-learn-ascertain-familiarize
+
+-other works-benchmark-alternative-counterpart-other technique-predecessor-contemporary
+
+-solve a problematic thing-resolve-handle-combat-overcome-tackle-remedy-unravel-surmount-deal with-address-cope with
+
+-weaken a problem-alleviate-mitigate
+
+-bad-not acceptable-disappointing-improper-inconvenient-inappropriate-inadequate-leave a lot to be desired-unsatisfactory-limited-has some limitations-not effective-imperfect-inferior-mediocre-adverse-clumsy-lame-sloppy-unpleasant-poor
+
+-trustworthy-reliable-credible-dependable-sound-solid
+
+-logical-reasonable-legitimate-rational-sensible-plausible-viable-intuitive-insightful-rigorous-admissible
+
+-necessary-essential-vital-integral-intrinsic-indispensable
+
+-important-crucial-vital-of importance-significant-major-key-prominent-core-signify
+
+-do-perform-carry out-undertake-implement-conduct-establish-realize-fulfil-commit
+
+-sure-without doubt-absolute-certain-definite-true-rightful-indubitable-needless to say-has been settled
+
+-a little bit-somewhat-slight-mild-modest-negligible
+
+-start-begin-initiate-commence-trigger-induce-invoke-excite-originate-emanate-embark
+
+-big <number>-large <number>
+
+-do again-happen again-repeat-reiterate-recur-re<verb>
+
+-do well-succeed-achieve-accomplish-manage-fulfil-be successful-complete-be fruitful
+
+-go up and down-fluctuate-oscillate-deviate-vary-change
+
+-bring up a question-ask a question-raise a question-inquire-question-examine-investigate-pose
+
+-get rid of-eliminate-remove-omit-annihilate-discard-skip-suppress
+
+-say no-reject-refuse-violate-deny-decline-disobey-not satisfy
+
+-put up with-tolerate-allow-permit-accept-admit
+
+-happen-to be-be present-take place-occur-exist-arise-appear-emerge-to be inherent in
+
+-give up-leave-abandon-relinquish-withdraw-forsake-renounce
+
+-go back to-turn back to-get back-return-revert-revisit
+
+-help-do a favour-assist-aid-promote-endorse
+
+-stop-finish-end up-cease-terminate-complete-suppress-finalize-conclude
+
+-follow-keep track of-ensue-pursue-adhere to-track
+
+-decrease-reduce-decline-diminish-lessen-lower
+
+-want-desire-intend to-be bent on-tend to-be inclined on-request-endorse
+
+-keep-hold-preserve-retain-conserve-sustain-maintain
+
+-make constant-fix-establish-set
+
+-need-require-entail-necessitate-demand-involve
+
+-in the end-at last-after all-final-ultimate-eventual-terminal
+
+-after that-later-then-next-soon-subsequent-henceforth-latter-as of-afterwards
+
+-asap-immediate-instantaneous-instant-prompt-urgent
+
+-at the same time-simultaneous-concurrent-meanwhile-at once-coexisting
+
+-in the beginning-at first-in first place-initial-primary-first
+
+-above all-main-principal-primary-chief-essential-original
+
+-again and again-repeated-<several> times-frequent-often-regular
+
+-to have lack of-to be short of-deficiency-to be missing-insufficiency-deficit-restricted
+
+-chance-luck-opportunity-fortune-occasion-facility-feature-functionality
+
+-all-whole-complete-entire-total
+
+-lucky-fortunate-successful-advantageous
+
+-raw-immature-crude-premature-underdeveloped-undeveloped-unsophisticated
+
+-wrong-false-incorrect-questionable-erroneous-biased-misleading
+
+-worse-inferior to-lower grade-poor compared to-mediocre wrt
+
+-loosen-relax-relieve-weaken
+
+-in charge-responsible-bound to-engaged-liable
+
+-enough-sufficient-acceptable-adequate-satisfactory-suffice-eligible
+
+-better-superior to-outperform-excel-finer-higher performance-surpass-have advantage-outpace-transcend-more <good>
+
+-good-favourable-preferable-appealing-convincing-flourishing-compelling-promising-acceptable-satisfactory-fine-notable-apt-suitable-adequate-convenient-appropriate-reliable-effective-desirable-proper-decent-remarkable-prominent-successful-useful-positive-rich-pleasant-delightful-satisfactory-acceptable-fine-delicate-rigorous
+
+-questionable-controversial-debated-disputed-arguable
+
+-more and more-increasing-unceasing-progressive-to a greater extent
+
+-suggest-recommend-advise-advocate-offer-propose
+
+-short-brief-compact-concise-limited-little-small-minor-brevity
+
+-good side-advantage-benefit-merit-key strength-asset
+
+-by chance-incidental-by coincidence-accidental-as a by-product-as side effect-unexpected
+
+-try-attempt-endeavor-strive-make effort-aim-undertake-objective-goal-target
+
+-make up for-compensate-balance-counteract-counterbalance-neutralize
+
+-call off-cancel-abolish-abandon-abort-eliminate-omit-remove-withdraw-eradicate
+
+-think of-consider-conceive of-imagine-to be concerned that-contemplate
+
+-about-near-an estimated-approximate-rough
+
+-hard-difficult-challenging-problematic-burdensome-demanding-formidable-sophisticated-complicated-intricate
+
+-stand for-denote-represent-referred as-symbolize
+
+-next to-adjacent-neighboring-close to-adjoining-beside-bordering-contiguous
+
+-rich-affluent-prosperous-abundant-fertile-fruitful
+
+-same-equivalent-coincide-similar-akin-alike-analogous-comparable-equal-identical-interchangable-can be substituted
+
+-virtue-characteristic-property-feature-attribute-entity-functionality-trait
+
+-before-prior to-in advance of-ahead of-preceding
+
+-get a value-attain a value-assume a value-acquire-take
+
+-because-owing to the fact that-as a result of the fact that-due to the fact that-in the sense that-since-for the reason that-inasmuch as-attribute to-as -given that-in that
+
+-we think that-it is seen that-we observe that-it seems that-it could be argued that-we believe that-we conclude that-we deduce that-we infer that-we estimate that-we expect that-we guess that-we recognize it as-is identified as
+
+-and-as well as-in addition to-along with-also-including-in conjunction with-on top of-apart from
+
+-careful-cautious-prudent-deliberate-meticulous-vigilant-take measure
+
+-agreement-assent-consensus-concurrence-accordance-compliance-compromise-conformity
+
+-go beyond-exceed-outreach-outrun-overtake-pass-rise above-transcend
+
+-give-hand in-submit-turn in
+
+-give-provide-grant-assign-devote-supply-contribute
+
+-following-in accordance with-pursuant to-abiding by-adhering to
+
+-make sure-ensure-assure-guarantee-establish-warrant-clinch
+
+-allow-authorize-grant-consent-permit-approve-confirm-endorse-sanction-tolerate-accept-agree-verify
+
+-decide-settle-arrive at-conclude-establish-judge-infer-deduce-sum up
+
+-when we get-on receipt of
+
+-whenever we like-want-Without prior notice
+
+-there are no big differences-no significant differences emerge between
+
+-i.e-namely-that is-in other words-particular
+
+-come-arrive-reach-drop by-enter-visit-access
+
+-go up to-reach-stretch to-approach-extend to
+
+-work-function-perform-act-behave-operate-run-serve-use
+
+-copy-imitate-clone-duplicate-emulate-mimic-replicate
+
+-mix-mingle-blend-combine-merge-fuse-integrate-synthesize
+
+-gather-accumulate-aggregate-unite-gather-collect
+
+-support-advocate-endorse-promote-foster
+
+-obey-comply with-adhere to-abide by-conform to-satisfy-meet-agree-fulfil-admit-accept
+
+-new-novel-original-cutting edge-ground breaking-innovative-revolutionary-promising
+
+-in the same way-similar-likewise-analogous-coincide-in agreement-match
+
+-look for-seek-explore-inquire-investigate-pursue-search for
+
+-way-manner-sense-aspect-behavior-condition-fashion-form-nature-respect-state-status-style-mechanism
+
+-place-position-location-area-neighborhood-part-region-vicinity-volume-zone-territory-field
+
+-a little-some-not much-a number of-a couple of-certain-limited-small amount of-a range of-minor
+
+-easy-with ease-effortless-simple-smooth-uncomplicated-with no effort-without trouble-trivial-naive
+
+-viewpoint-stance-frame of reference-perspective-point of view-respect-standpoint-opinion-idea
+
+-fast-quick-rapid-abrupt-accelerated-agile-brisk-expeditious-immediate-instantaneous-prompt-sudden
+
+-how much-extent-range-amount-amplitude-bounds-breadth-intensity-limit-measure-quantity-scope-size
+
+-when-at the time of-during-immediately upon-meanwhile-while
+
+-make sth better-improve-amend-enhance-advance-boost-progress
+
+-not any-no
+
+-not many-a few-a little-negligible-scarce-slight-sparse-uncommon
+
+-go on-persist-continue-proceed-advance-carry on-keep on-last
+
+-avoid-refrain from-prevent-circumvent-escape-skip-withdraw-deter
+
+-change-transform-modify-alter-evolve-manipulate-vary-convert-update-amend
+
+-usual-general-common-wide-widespread-ordinary-ubiquitous-typical
+
+-add-insert-include-incorporate-embed-introduce-contribute
+
+-next-also-additional-moreover-furthermore-besides-in addition to-likewise-as well as-similar-both
+
+-spoil-make bad-deteriorate-degrade-distort-damage-devastate-harm-impair-disturb
+
+-make worse-aggravate-complicate-deepen
+
+-there are-arise-emerge-appear-begin-come to light-commence-happen-issue-occur-originate-result-start-stem
+
+-because of-due to-as-owing to-thanks to-in view of-upon-based on-by using-using-in view of-in regard to-by-according to-within the scope of-by virtue of
+
+-more-further-additional-another-else-extra-new-other-supplementary-remaining-rest-greater-larger
+
+-have-possess-bear-carry-be endowed with-hold-maintain-occupy-own-retain-offer-preserve-capture-support
+
+-for example-for instance-in particular-particular-specifical-peculiar
+
+-as a result of which-whereby-thereby
+
+-so-therefore-according-consequent-hence-thus-thereof-for this reason-it follows that
+
+-conclude-for the aforementioned reasons-sum up-given these facts-in conclusion-overall-brief-in brief
+
+-prove-manifest-attest-testify-certify-establish-show
+
+-but-in contrast-however-on the other hand-yet-nevertheless-nonetheless-even so-though-unlike-converse-unfortunate-as opposed to
+
+-although-whereas-notwithstanding-albeit-while-despite-in spite of
+
+-now-current-at the moment-at this time-immediate-instant-momentary-present-at this point
+
+-during-simultaneous-meanwhile-concurrent-all along-amid-as-at the same time as-in the course of-in the middle of-in the time of-over-the time between-throughout-when-while
+
+-up to now-heretofore-so far
+
+-obvious-apparent-evident-conspicuous-clear-explicit-exposed-indisputable-prominent-self explanatory-transparent
+
+-may be-perhaps-possible-probable-is likely to be-to be bound to-is intended to be
+
+-if-given-in case-whether-as
+
+-condition-stipulation-constraint-requirement-demand-essential-postulate-prerequisite-specification
+
+-super-great-awesome-very good-wonderful-splendid- magnificent-phenomenal-extraordinary-marvellous-superb-excellent-spectacular-brilliant-glorious-impressive-sublime
+
+-smart-intelligent-brilliant-clever-wise
+
+-very-pretty-really-truly-incredible-exceeding-extreme-extraordinary-utter-absolute-perfect-sublime-severe-rather-high-deep-quite-strong-substantial-considerable-striking-completely
+
+-noted-remarked-commented-mentioned-referred-announced
+
+-precise-accurate-exact-incisive-rigorous-correct-true-right
+
+-find sth to be-is considered as-is deemed to be-is regarded as-is believed to be-is conceived as-is esteemed as-is estimated as-is known as-is viewed as
+
+-trial-training-practice-exercise-iterate-repeat-prepare-rehearse-study
+
+-mean-intend-aim-attempt-dedicate-devote-endeavor-plan-purpose-strive
+
+-important thing-concern-issue-affair-argument-controversy-matter-point-problem-question-subject-topic
+
+-is-constitutes-comprises-form-to be composed of-embody-represent-equipped with
+
+-direct-manage-conduct-administer-carry on-execute-govern-operate-rule-supervise-run-use
+
+-not enough-deficient-insufficient-scarce-imperfect-impaired-incomplete-insufficient-lacking-short-unsatisfactory
+
+-way-method-methodology-technique-convention-scheme-policy-mechanism-algorithm-means-model
+
+-straight-successive-succeedin-consecutive-following-after-in a row-next-sequential
+
+-useless-not working-in vain-dysfunctional-fruitless-ineffective-of no use-pointless-worthless
+
+-example-sample-instance-occurrence-case
+
+-circumstance-situation-case-condition-occasion-occurrence-phase-respect-scene-status
+
+-affect-influence-have impact-alter-change-determine-direct-form-induce-rule
+
+-make-render-cause to become-induce-drive-effect-develop-establish-create-produce
+
+-make possible-give opportunity-enable-allow-make capable-make feasible-provide-ensure-assure-promote-endorse-fulfil-stimulate-foster
+
+-possible-likely-probable-inclined-permissible
+
+-be limited to-remain confined to-be restricted to-narrow-be restrained
+
+-pay cost-incur a cost-be subjected to-expose oneself to-experience
+
+-size-extent-breadth-range-magnitude-amount-amplitude-intensity-limit-measure-quantity-scope-span
+
+-take-get-attain-acquire-receive-obtain
+
+-suffer from-incur-be exposed to-undergo-to be afflicted to-to be inflicted to-experience
+
+-this-such a-aforementioned-akin-analogous-similar-corresponding-indicated-given-counterpart
+
+-like-such as-similar to-akin-analogous-as
+
+-emphasis-actually-really-just-indeed-literally-genuine-certain-clear-in fact-obviously-sure-as a matter of fact
+
+-call-entitle-name-label-designate-term-titled-denote-indicate-signify
+
+-so that-such that-in the sense that-thereby-so as to
+
+-have to-be compelled to-to be bound to
+
+-most of-majority of-nearly all-almost-exceeding
+
+-declare-claim-affirm-advocate-support-defend-believe
+
+-paper-article-resource-work-journal-reference-research-publication-study-manuscript-report
+
+-difference-distinction-nuance-dissimilarity-contrast-deviation-discrepancy-diversity-exception-irregularity-nonconformity-peculiarity-variation
+
+-average-moderate-fair-normal-typical-common-general-intermediate-mainstream-mediocre-medium-ordinary-regular-standart-tolerable-unexceptional-usual
+
+-partial-incomplete-limited-imperfect-uncompleted-unfinished
+
+-apt-suitable-adequate-convenient-appropriate-conform to-proper-amenable-pertain to-inclined-predisposition-compatible-feasible
+
+-ongoing-perpetual-ceaseless-lasting-constant-continuous-endless-permanent-persistent
+
+-answer-retort-reply-respond-react
+
+-exists-available-can be accessed-appears-present-inherent in
+
+-with-accompanied by-in conjunction with-coupled with-in association with-combined with-coupled with
+
+-let smo know-acknowledge-inform-apprise-notify
+
+-adjust-tune-set-configure-calibrate-fix-regulate
+
+-given-indicated-designated-specified-determined
+
+-useful-serve its purpose-beneficial-advantageous-valuable-fruitful-functional-handy-helpful-practical
+
+-like-similar to-analogous-coincident-identical-in agreement-matching
+
+-expect-anticipate-believe-contemplate-suppose-assume-presume-judge-claim
+
+-thing-aspect-concept-notion-point-fact
+
+-evaluate-assess-judge-rate-rank-mark-value-appraise
+
+-suppose-assume-presume-postulate-feel-expect-consider-conceive-believe-deem-claim
+
+-write-author-compose
+
+-writer-author-correspondent-scribbler
+
+-know-be aware of-acquaintance-familiarity-perceive-recognize-realize-understand-interpret-regard
+
+-for-on behalf of-in the name of-on account of-for the sake of-in the service of-in favor of
+
+-can-be able to-capable of-have permission-be permitted-be allowed-manage
+
+-classify-categorize-group-organize-manage
+
+-old-former-classical-previous-mature
+
+-have-comprises-to be composed of-consist of-include-contain-hold-equipped with
+
+-modern-contemporary-current-present
+
+-consult-confer-refer to
+
+-refer to-mention-comment-note-report-declare-point out-designate
+
+-conflicting-inconsistent-discrepant-unreasonable-irrational-incompatible
+
+-result-consequence-outcome-product-conclusion-corollary
+
+-make-set up-found-create-generate-form-constitute-construct-establish
+
+-fact-criterion-principle-protocol-rule-law-standards-specification
+
+-attached-enclosed-appended
+
+-as far as we know-to the best of our knowledge
+
+-many-different-various-diverse-several
+
+-effort-endeavor-exertion-attempt-trial
+
+-tell-say-express-emphasize-state-underline-highlight-point out-stress-mention-explain-claim-declare
+
+-make easy-ease-promote-facilitate-simplify
+
+-clear-transparent-apparent-evident-obvious-plain
+
+-thank-be grateful-appreciate-gratitude
+
+-context-framework-scenario-scheme-subject-topic-content
+
+-usual-not interesting-mundane-normal-habitual-regular-common-ordinary
+
+-easy-facile-simple-casual-effortless-plain-trivial-straightforward-with ease-naive
+
+-it is true that-we agree that-as you have pointed out
+
+-understanding-interpretation-insight-implication-comprehension-perception
+
+-can not-fails to-does not qualify as-be unsuccessful-fail of success-incapable of
+
+-interesting-compelling-intriguing-remarkable-notable
+
+-area-field-branch-domain-set
+
+-popularity-reputation-prominence-prevalence-recognition
+
+-evidence-fact-proof-indication
+
+-make difficult-complicate
+
+-become bigger-increase-boost-raise-promote-accumulate-gain-increment-enlarge-amplify-grow-extend-expand-magnify-widen-broaden-intensify-heighten-deepen-spread-reinforce-elevate-foster-become larger-become greater
+
+-infer-deduce-conclude-interpret-draw a conclusion-come to a conclusion-arrive at a conclusion
+
+-avoid-hinder a good thing-prevent a bad thing-inhibit-prohibit-restrain-circumvent-suppress
+
+-define-introduce-characterize-describe-name-designate-specify-identify
+
+-device-instrument-equipment-apparatus
+
+-differentiate-distinguish-discriminate-make a distinction-separate-divide
+
+-change place-displace-dislocate
+
+-different-distinct-distinguished-separate-stand out
+
+-distributed-decentralized
+
+-dominate-prevail-influence-govern-dictate-impose-significant
+
+-impose-enforce-intervene-interfere-require
+
+-error-mistake-fault-wrong
+
+-guess-estimate-predict-assume
+
+-exceed-surpass-excel-transcend-go beyond-pass
+
+-other than-excluding-except for-apart from-dispense from-exempt
+
+-expert-specialist-proficient-professional-experienced-authority
+
+-explicit-obvious-apparent-transparent-clear
+
+-external-extrinsic-outward-outside-outlying
+
+-factor-part-component-ingredient-integrant-element
+
+-finite-limited-restricted-bounded-restrained
+
+-flexible-adaptive-versatile-multi functional
+
+-formula-equation-expression-function-relation-identity-property-fact-result-signal-time series-trajectory-curve
+
+-basic-fundamental-elementary-underlying-primary-primitive-principal-preliminary-preparatory
+
+-must-should-ought to-had better-goal-objective-aim-target-purpose-intend-bound to-supposed to
+
+-guideline-instruction-learning-guidance-prescription-directive
+
+-detect-recognize-identify-establish-distinguish-discover-spot-notice-perceive
+
+-photo-image-figure-picture-portrait-photograph
+
+-hidden-implicit-blind-concealed-private-secret
+
+-motivation-incentive-interest-encouragement-motive
+
+-event-incidence-phenomenon-circumstance-occurrence-occasion
+
+-individual-member-particle-player-agent
+
+-inevitable-unpreventable-uncontrollable-unavoidable-inescapable
+
+-input-argument-parameter-intake
+
+-interaction-interplay
+
+-internal-inside-intrinsic-inner-inward-interior
+
+-interval-period-space-range-inequality
+
+-thing-item-object-component-aspect-element-part-portion
+
+-become smaller-shrink-diminish-warp
+
+-or-otherwise-alternative-to the contrary-rather-opposite-contrary-converse-inverse-on the other hand-on the contrary-other-another-else-other than
+
+-topic-subject-scope-mainstream-question-problem-issue-theme-content
+
+-instead of-rather than-alternatively-as a substitute of-in place of
+
+-automatic-automated-adaptive-spontaneous
+
+-things to do-tasks-duties-experiment-assignment-exercise-test-simulation
+
+-beginning-outset-start-commencement-initiate
+
+-optimize-maximize-minimize
+
+-environment-medium-surroundings
+
+-move-migrate-actuate-locomote-travel
+
+-mode-configuration-setting
+
+-mutual-common-joint
+
+-occupy-cover-take up-fill-inhabit-engage-devote-spend-employ
+
+-persistent-regular-constant-steady-permanent-durable-lasting-sustained-unfading-frequent-repetitive-recurring-recurrent
+
+-option-choice-preference-decision
+
+-orientation-direction-destination-heading
+
+-outcome-output-result-consequence-outlet-gain
+
+-overall-general-average-total
+
+-overlap-intersect-have in common-cover-override-cross-coincide
+
+-paradigm-methodology-model-standard-criterion-rule-condition
+
+-stage-phase-level-interval
+
+-go or come before-precede-be prior to
+
+-priority-precedence-preference
+
+-process-procedure
+
+-prospective-coming-forthcoming-approaching-next
+
+-function-purpose-role-intention-functionality
+
+-qualitative-quantitative
+
+-restore-recover-reconstruct-rebuild-reestablish
+
+-choose-select-prefer-pick-accept-adopt-assign-set
+
+-via-through-as a consequence-by-by means of-using-with the help of
+
+-next-upcoming-forthcoming-subsequent-anticipated-approaching-coming-awaited-succeeding
+
+-ambiguous-not clear-vague-inconclusive-obscure-uncertain-unclear-questionable
+
+-before-previous-preceding-former-earlier-past-prior
+
+-step by step-gradual-continuous-progressive-increasing
+
+-without-not caring about-not about-regardless of-irrespective of
+
+-find-come up with-explore-discover-detect-encounter-identify-meet-notice-spot-uncover
+
+-remark-comment-analysis-observation-conclusion-explanation-note-opinion-statement
+
+-is-counts as-thought as-denotes-is treated as-is regarded as-is recognized as-is perceived as-is identified as-represents-is handled as
+
+-long-lengthy-deep-great-high-tall
+
+-analytic solution-optimal solution-analytic expression-closed form solution
+
+-asymptotic approximation-first order approximation-taylor series-taylor expansion-small a-large a
+
+-standard-normal-conventional-traditional-regular-ordinary-classical-original-default
+
+-justify-explain-state your reasoning-express your argument-clarify-describe your rationale-how did you deduce-how did you infer
+
+-reasoning-argument-rationale-logic-interpretation-analysis-hypothesis-inference-premise
+
+-verify-check-confirm-validate-authenticate-certify-establish-prove-test
+
+-keep in mind that-note that
+
+-note that-suppose that-assume that-let-consider-here
+
+-associate-relate-identfiy-correlate-link
+
+-for-subject to-under-in the presence of-under the presence of-where-such that
+
+-bad side-limitation-disadvantage-drawback-harm-detriment-inconvenience-trouble-shortcoming
+
+-go up-ascend-climb-escalate-soar
+
+-neglect-ignore-skip-disregard-omit-disrespect-indifference
+
+-equate-set-balance-associate-relate-equalize
+
+-make fast-accelerate-expedite-quicken-stimulate
+
+-for-for this purpose-towards this goal-in order to-for the sake of-to this end-towards this end
+
+-proximity-closeness
+
+-meaning-definition-essence-explanation-implication-interpretation
+
+-give-assign-allot-reserve-allocate-dedicate-devote-contribute
+
+-break-ruin-damage-destroy-undermine-harm-impair
+
+-regularity-uniformity-harmony-agreement-conformity-consistency-consensus-cooperation
+
+-after-as of-afterwards-later-subsequent
+
+-formation-structure-architecture-form-design-format-framework-organization-system-filter-representation-form-scheme-arrangement-context
+
+-compare-juxtapose-contrast
+
+-comparison-x vs y-analogy-connection-juxtaposition-relation-resemblance-similarity
+
+-firm-determined-persistent-stable-steady-strict
+
+-compared to-as opposed to-with respect to-unlike-versus-dissimilar
+
+-disappear-abandon-depart-fade-leave-withdraw
+
+-come from-arise-emerge-stem from-originate from-caused by-result from-emanate
+
+-empirical-experimental-observational-application
+
+-not-by no means-no more-not at all-not either
+
+-plug in-substitute-replace
+
+-difficulty-challenge-complication-bottleneck-intricacy
+
+-theme-gist-cream of the matter-key point-summary
+
+-valid-legitimate-legal-appropriate-consistent-correct-genuine-logical-proper-reasonable-reliable-sensible-rigorous-compatible
+
+-this way-like this-then-thus-so-hence-as follows-in this fashion
+
+-kind-type-class-family-category-form-group-variety
+
+-trade off-compromise-balance
+
+-carry-bear-convey-bring-take-transfer-transmit
+
+-other-another-xxx else-rest-except-excluding
+
+-effect-phenomena-consequence-event-issue-outcome
+
+-version-variant-adaptation-form
+
+-indicative-exhibitive-suggestive-demonstrative-testimonial
+
+-nominal value-rule of thumb
+
+-swarm-flock-multi agent system-cluster-aggregation-team-queue-platoon
+
+-statement-idea-claim-fact-comment-description-explanation-proclamation-remark-discussion-issue-query
+
+-robust-resilient-flexible-tough
+
+-recommendation-suggestion-correction-advise-idea-instruction-opinion-proposal
+
+-visual-pictorial-optical-illustrative
+
+-thrive-boom-bloom-blossom-develop-flourish-grow-prosper-shine-succeed
+
+-break sth into-decompose-separate-disintegrate-dismantle
+
+-cancel out-annihilate-neutralize-reverse-undo
+
+-become-boil down to-amount to-reduces to-leads to-be transformed to-be converted to-correspond to
+
+-for-of-corresponding to
+
+-there are a lot of works-widely encountered-frequently observed-extensively studied-ubiquitous-commonly investigated
+
+-overview-glance-outline-summary-review
+
+-belong-be amongst-exist
+
+-quality-capacity-excellence
+
+-good technique-effective-promising-compelling-appealing-notable-reliable-remarkable-prominent-intriguing-pioneer-leading-favourable
+
+-plot-graph-diagram-figure-curve
+
+-jargon-notation-terminology
+
+-code-command-formula-instruction-equation
+
+-more-outnumber-exceed
+
+-see-observe-deduce-infer
+
+-go away-depart
+
+-computational complexity-tractable-scalable-computational burden
+
+-prone-susceptible-fragile-tendency
+
+-unobvious-nontrivial-subtle
+
+-dominant-prominent-prevail
+
+-one-single-a-individual
+
+-in this study-in this work-here-in this section-in this part-in this paper-in this article-in this method-in this technique-etc
+
+-treat-consider-regard
+
+-value-entry-element-number-sample-quantity-expression-term
+
+-extension-relaxation-generalization
+
+-change-swap-interchange-switch-replace
+
+-ask-prompt-query-question
+
+-plot-sketch-draw-mark
+
+-tool-utility-means-gadget-mechanism
+
+-delete-erase-evacuate
+
+-root-cause-basis-ancestor-source-origin-motive
+
+-correct-refine-review-revise
+
+-not exist-absent
+
+-ratio-proportion-percentage-fraction
+
+-threshold-limit-boundary
+
+-can-may-might-is it possible to-could
+
+-make strong-strengthen-establish-extend-increase-intensify-reinforce-support-sustain-
+
+-make short-shorten
+
+-make long-extend
+
+-factor-agent
+
+-make normal-regulate
+
+-extend-relax-generalize-transcend
+
+-solution-result-answer
+
+-infinite-unlimited
+
+-empty-free-spare
+
+-especially-particularly
+
+-depend-rely on-related to-associated with
+
+-research-quest-delve
+
+-fill-populate
+
+-unusual-exceptional-not typical
+
+-satisfy-selected as-chosen as-assigned as-equal to-is-obey-meet-such that-so that
+
+-accept-admit-agree
+
+-sometimes-occasionally
+
+-complex-complicated-sophisticated-advanced
+
+-hinder-disturb-disrupt
+
+-deliberately-consciously-intentionally-on purpose
+
+-execute-run-compute-calculate-operate
+
+-information-knowledge-data
+
+-knowledge-define-identify-describe-recognize-tell-explain-recite-memorize-illustrate-quote-state-match-recognize-select-examine-locate-recite-enumerate-record-list-quote-label
+
+-understand-summarize-interpret-classify-compare-contrast-infer-relate-extract-paraphrase-cite-discuss-distinguish-delineate-extend-predict-indicate-translate-inquire-associate-explore convert
+
+-apply-solve-change-relate-complete-use-sketch-teach-articulate-discover-transfer-show-demonstrate-involve-dramatize-produce-report-act-respond-administer-actuate-prepare-manipulate
+
+-analyze-contrast-connect-relate-devise-correlate-illustrate-distill-conclude-categorize-take apart-problem-solve-differentiate-deduce-conclude-devise-subdivide-calculate-order-adapt
+
+-evaluate-criticize-reframe-judge-defend-appraise-value-prioritize plan-grade-reframe-revise-refine-grade-argue-support-evolve-decide-redesign-pivot
+
+-create-design-modify-role-play-develop-rewrite-pivot-modify-collaborate-invent-write-formulate-invent-imagine
+
+-nice-pleasant-delightful-satisfactory-acceptable-fine-delicate-rigorous
+
+-dense-compact-intense-high density-concentrated-condensed
+
+-help-assist-contribute-participate
+

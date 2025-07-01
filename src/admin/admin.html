@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Panel Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="admin.css">    <style>
+        html, body {
+            height: auto;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            height: 80px;
+        }
+        .footer {
+            position: static;
+            background-color: #072e46;
+            color: white;
+            padding: 20px 20px;
+            text-align: center;
+            margin-top: 40px;
+            width: 100%;
+            font-size: 0.8rem;
+            bottom: 0;
+            z-index: 1000;
+        }
+        .footer a {
+            color: white;
+            text-decoration: none;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<!-- Header -->
+<header class="header">
+    <div class="header-left">
+        <img src="logo.png" alt="Logo" class="logo">
+        <span class="title-text">Academic Vocabulary Search Engine</span>
+    </div>
+</header>
+<!-- Go Back Button -->
+<button class="go-back-btn" onclick="window.location.href='../public/index.html'">❮❮ Go Home</button>
+<!-- Theme Toggle -->
+<div class="theme-toggle" onclick="toggleTheme()">
+    <div class="toggle-thumb" id="themeEmoji">🌞</div>
+</div>
+<!-- Main Content -->
+<div class="main-content">
+
+    <div class="container">
+        <div class="admin-title">Admin Panel</div>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="username" required>
+            <div class="password-wrapper">
+                <input type="password" id="password" placeholder="password" required>
+                <span class="toggle-password" onclick="togglePassword()">👀</span>
+            </div>
+            <div class="login-btn-row">
+                <button type="submit">Log In</button>
+            </div>
+            <p id="errorMsg"></p>
+        </form>
+    </div>
+</div>
+
+<footer class="footer">
+    <p style="font-size: 0.9em;">Copyright © 2025 - Academic Vocabulary - Last update date: June 2025</p>
+    <p style="font-size: 0.7em;">Developed by <a href="https://www.linkedin.com/in/poyrazkoca/" target="_blank">Poyraz Koca</a></p>
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', applyTheme);
+
+    const form = document.getElementById('loginForm');
+    const errorMsg = document.getElementById('errorMsg');
+
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        const user = document.getElementById('username').value.trim();
+        const pass = document.getElementById('password').value.trim();
+
+        if (user === 'admin' && pass === 'admin123') {
+            sessionStorage.setItem('auth', 'true');
+            window.location.href = 'panel.html';
+        } else {
+            errorMsg.textContent = 'The username or password is incorrect';
+        }
+    });
+
+    function toggleTheme() {
+        const body = document.body;
+        const emoji = document.getElementById('themeEmoji');
+        const toggle = document.querySelector('.theme-toggle');
+
+        const isDark = body.classList.toggle('dark-theme');
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');        if (isDark) {
+            emoji.textContent = '🌙';
+            emoji.style.transform = 'translateX(30px)';
+            toggle.style.backgroundColor = '#333';
+        } else {
+            emoji.textContent = '🌞';
+            emoji.style.transform = 'translateX(0)';
+            toggle.style.backgroundColor = '#ccc';
+        }
+    }    function applyTheme() {
+        const saved = localStorage.getItem('theme');
+        if (saved === 'dark') {
+            document.body.classList.add('dark-theme');
+            document.getElementById('themeEmoji').textContent = '🌙';
+            document.getElementById('themeEmoji').style.transform = 'translateX(30px)';
+            document.querySelector('.theme-toggle').style.backgroundColor = '#333';
+        } else {
+            document.getElementById('themeEmoji').textContent = '🌞';
+            document.getElementById('themeEmoji').style.transform = 'translateX(0)';
+            document.querySelector('.theme-toggle').style.backgroundColor = '#ccc';
+        }
+    }
+
+    function togglePassword() {
+        const passField = document.getElementById('password');
+        passField.type = passField.type === 'password' ? 'text' : 'password';
+    }
+</script>
+</body>
+</html>
