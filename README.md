@@ -20,3 +20,4 @@
 - **AJAX**: Seamless dynamic page updates
 - **Version Control:** Git, GitHub
 - **Hosting:** GitHub Pages + Custom Domain ([acavoca.com](https://acavoca.com))
+---
