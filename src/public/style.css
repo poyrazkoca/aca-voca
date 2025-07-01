@@ -1,10 +1,16 @@
 /* Genel ayarlar */
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 2rem 1rem;
     background-color: #fff;
     overflow-x: hidden; /* sağa sola kaydırmayı engeller */
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .container {
@@ -34,22 +40,27 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 15px;
     background-color: #072e46;
     color: white;
     width: 100%;
+    min-height: 60px;
+    flex-wrap: wrap;
 }
 
 .header-left {
     display: flex;
     align-items: center;
+    min-width: 0;
+    flex: 1;
 }
 
 .logo {
-    height: 60px;
+    height: 50px;
     width: auto;
-    margin-right: 20px;
-    margin-left:  20px;
+    margin-right: 15px;
+    margin-left: 10px;
+    flex-shrink: 0;
 }
 
 .title-text {
@@ -57,6 +68,9 @@ body {
     font-weight: 300;
     letter-spacing: 0.5px;
     margin-left: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .header-right {
@@ -126,27 +140,35 @@ body {
     align-items: center;
     gap: 6px;
     border-color: #072e46;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 #searchBox {
-    height: 38px;
-    border: 1px solid #fff;
+    height: 40px;
+    border: 1px solid #072e46;
     border-radius: 6px 0 0 6px;
     padding: 0 12px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     outline: none;
-    border-color: #072e46;
+    flex: 1;
+    min-width: 0;
 }
 
 #searchBtn {
-    height: 38px;
-    border: 1px solid #fff;
+    height: 40px;
+    border: 1px solid #072e46;
     border-left: none;
     border-radius: 0 6px 6px 0;
     background: #072e46;
-    font-size: 1.1rem;
+    color: white;
+    font-size: 1rem;
     cursor: pointer;
     transition: background 0.2s;
+    padding: 0 16px;
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
 #searchBtn:hover { background: #003cff; }
@@ -156,17 +178,21 @@ body {
     display: inline-flex;
     gap: 4px;
     margin-left: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .audio-buttons button {
     background-color: #072e46;
     color: white;
     border: none;
-    padding: 6px 12px;
+    padding: 8px 12px;
     border-radius: 4px;
     cursor: pointer;
     font-size: 0.9rem;
     transition: background-color 0.2s ease;
+    min-height: 40px;
+    touch-action: manipulation;
 }
 
 .audio-buttons button:hover {
@@ -190,12 +216,17 @@ body {
 }
 
 #suggestions li {
-    padding: 8px;
+    padding: 12px;
     background-color: #f8f9fa;
     border: 1px solid #e9ecef;
     cursor: pointer;
     border-radius: 4px;
     margin-bottom: 2px;
+    font-size: 1rem;
+    touch-action: manipulation;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
 }
 
 #suggestions li:hover {
@@ -210,10 +241,12 @@ body {
 .cluster {
     background-color: #f8f9fa;
     border-left: 5px solid #072e46;
-    padding: 10px;
-    margin-bottom: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
     border-radius: 4px;
     border: 1px solid #e9ecef;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .highlight {
@@ -234,10 +267,10 @@ body {
 /* Theme Toggle */
 .theme-toggle {
     position: fixed;
-    top: 100px;
-    right: 18px;
-    width: 60px;
-    height: 30px;
+    top: 85px;
+    right: 15px;
+    width: 55px;
+    height: 28px;
     background-color: #ccc;
     border-radius: 60px;
     display: flex;
@@ -247,17 +280,18 @@ body {
     cursor: pointer;
     border: none;
     z-index: 1001;
+    touch-action: manipulation;
 }
 
 .toggle-thumb {
-    width: 24px;
-    height: 24px;
+    width: 22px;
+    height: 22px;
     border-radius: 50%;
     background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 16px;
+    font-size: 14px;
     transition: transform 0.3s ease;
 }
 
@@ -308,13 +342,16 @@ body.dark-theme .cluster {
 }
 
 button {
-    padding: 8px 16px;
+    padding: 10px 16px;
     border: none;
     background-color: #072e46;
     color: white;
     cursor: pointer;
     border-radius: 6px;
     margin: 5px;
+    min-height: 44px;
+    touch-action: manipulation;
+    font-size: 1rem;
 }
 
 button:hover {
@@ -376,33 +413,45 @@ body.dark-theme .result-word:hover {
 }
 
 .hamburger {
-    font-size: 2rem;
+    font-size: 1.8rem;
     cursor: pointer;
     user-select: none;
-    padding: 2px 8px;
+    padding: 8px 12px;
+    touch-action: manipulation;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.hamburger:hover {
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .dropdown-menu {
     display: none;
     position: absolute;
     right: 0;
-    top: 36px;
+    top: 50px;
     background: #fff;
-    border: 1px solid #fff;
+    border: 1px solid #ddd;
     border-radius: 6px;
-    min-width: 180px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    min-width: 200px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     z-index: 2500;
 }
 .dropdown-menu a {
     display: block;
-    padding: 10px 16px;
+    padding: 15px 20px;
     color: #222;
     text-decoration: none;
     font-size: 1rem;
+    border-bottom: 1px solid #f0f0f0;
+    transition: background-color 0.2s;
+}
+.dropdown-menu a:last-child {
+    border-bottom: none;
 }
 .dropdown-menu a:hover {
-    background: #fff;
+    background: #f8f9fa;
 }
 .dropdown-menu.show {
     display: block;
@@ -413,16 +462,457 @@ body.dark-theme .result-word:hover {
     justify-content: center;
     gap: 8px;
     margin: 24px 0 0 0;
+    flex-wrap: wrap;
 }
 .pagination-btn {
-    padding: 6px 12px;
+    padding: 8px 14px;
     border: 1px solid #072e46;
     border-radius: 4px;
     background: #072e46;
+    color: white;
     cursor: pointer;
     font-size: 1rem;
+    min-height: 44px;
+    min-width: 44px;
+    touch-action: manipulation;
+    transition: background-color 0.2s;
 }
 .pagination-btn.active {
-    background: #072e46;
+    background: #003cff;
     font-weight: bold;
+}
+.pagination-btn:hover {
+    background: #003cff;
+}
+
+/* =========================
+   RESPONSIVE MEDIA QUERIES
+   ========================= */
+
+/* Large screens */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 800px;
+    }
+    
+    .title-text {
+        font-size: 1.3rem;
+    }
+    
+    #searchBox {
+        font-size: 1.1rem;
+    }
+    
+    #searchBtn {
+        font-size: 1.1rem;
+    }
+}
+
+/* Tablet landscape */
+@media (max-width: 1024px) {
+    body {
+        padding: 1.5rem 0.8rem;
+    }
+    
+    .container {
+        margin-top: 80px;
+    }
+    
+    .header {
+        padding: 8px 15px;
+    }
+    
+    .logo {
+        height: 45px;
+        margin-right: 12px;
+    }
+    
+    .title-text {
+        font-size: 1rem;
+    }
+}
+
+/* Tablet portrait and small laptops */
+@media (max-width: 768px) {
+    body {
+        padding: 1rem 0.5rem;
+    }
+    
+    .container {
+        margin-top: 70px;
+    }
+    
+    .header {
+        padding: 8px 12px;
+        min-height: 65px;
+    }
+    
+    .logo {
+        height: 40px;
+        margin-right: 10px;
+        margin-left: 5px;
+    }
+    
+    .title-text {
+        font-size: 0.9rem;
+        margin-left: 5px;
+    }
+    
+    .theme-toggle {
+        top: 75px;
+        right: 12px;
+        width: 50px;
+        height: 25px;
+    }
+    
+    .toggle-thumb {
+        width: 19px;
+        height: 19px;
+        font-size: 12px;
+    }
+    
+    .search-box-group {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    #searchBox {
+        border-radius: 6px;
+        border: 1px solid #072e46;
+        height: 45px;
+        font-size: 1rem;
+    }
+    
+    #searchBtn {
+        border-radius: 6px;
+        border: 1px solid #072e46;
+        height: 45px;
+        width: 100%;
+    }
+    
+    .audio-buttons {
+        margin-left: 0;
+        margin-top: 8px;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .audio-buttons button {
+        flex: 1;
+        max-width: 200px;
+    }
+    
+    .cluster {
+        padding: 12px;
+        margin-bottom: 12px;
+    }
+    
+    #footer-info {
+        padding: 15px 12px;
+        font-size: 0.85rem;
+    }
+    
+    .dropdown-menu {
+        min-width: 160px;
+        right: 5px;
+    }
+    
+    .dropdown-menu a {
+        padding: 12px 15px;
+        font-size: 0.95rem;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+    body {
+        padding: 0.8rem 0.3rem;
+    }
+    
+    .container {
+        margin-top: 65px;
+        padding: 0 10px;
+    }
+    
+    .header {
+        padding: 6px 10px;
+        min-height: 60px;
+        flex-wrap: nowrap;
+    }
+    
+    .header-left {
+        flex: 1;
+        min-width: 0;
+    }
+    
+    .logo {
+        height: 35px;
+        margin-right: 8px;
+        margin-left: 3px;
+    }
+    
+    .title-text {
+        font-size: 0.8rem;
+        margin-left: 3px;
+        max-width: calc(100vw - 150px);
+    }
+    
+    .hamburger {
+        font-size: 1.6rem;
+        padding: 6px 8px;
+    }
+    
+    .theme-toggle {
+        top: 70px;
+        right: 8px;
+        width: 45px;
+        height: 22px;
+    }
+    
+    .toggle-thumb {
+        width: 16px;
+        height: 16px;
+        font-size: 10px;
+    }
+    
+    .how-it-works {
+        font-size: 13px;
+        padding: 0 5px;
+        text-align: center;
+    }
+    
+    .search-area {
+        margin: 15px 0 8px 0;
+    }
+    
+    .search-box-group {
+        gap: 10px;
+        padding: 0 5px;
+    }
+    
+    #searchBox {
+        height: 48px;
+        padding: 0 15px;
+        font-size: 16px; /* Prevents zoom on iOS */
+    }
+    
+    #searchBtn {
+        height: 48px;
+        font-size: 1rem;
+        padding: 0 20px;
+    }
+    
+    #suggestions {
+        margin: 0 5px;
+    }
+    
+    #suggestions li {
+        padding: 15px 12px;
+        font-size: 1rem;
+        min-height: 48px;
+    }
+    
+    #results {
+        margin: 15px 5px 0 5px;
+    }
+    
+    .cluster {
+        padding: 12px 10px;
+        margin-bottom: 10px;
+        font-size: 0.95rem;
+    }
+    
+    .audio-buttons button {
+        padding: 12px 16px;
+        font-size: 0.9rem;
+        min-height: 48px;
+    }
+    
+    #footer-info {
+        margin: 0 5px 8px 5px;
+        padding: 12px 10px;
+        font-size: 0.8rem;
+        line-height: 1.4;
+    }
+    
+    .footer {
+        padding: 15px 10px;
+        font-size: 0.75rem;
+    }
+    
+    .dropdown-menu {
+        right: 5px;
+        min-width: 140px;
+        top: 45px;
+    }
+    
+    .dropdown-menu a {
+        padding: 15px 12px;
+        font-size: 0.9rem;
+    }
+    
+    #pagination {
+        gap: 6px;
+        margin: 20px 5px 0 5px;
+    }
+    
+    .pagination-btn {
+        padding: 10px 12px;
+        min-width: 40px;
+        min-height: 48px;
+        font-size: 0.9rem;
+    }
+    
+    button {
+        min-height: 48px;
+        padding: 12px 16px;
+        font-size: 1rem;
+    }
+}
+
+/* Very small screens */
+@media (max-width: 360px) {
+    .title-text {
+        font-size: 0.75rem;
+        max-width: calc(100vw - 120px);
+    }
+    
+    .logo {
+        height: 30px;
+        margin-right: 5px;
+    }
+    
+    .hamburger {
+        font-size: 1.4rem;
+        padding: 4px 6px;
+    }
+    
+    .theme-toggle {
+        width: 40px;
+        height: 20px;
+        right: 5px;
+    }
+    
+    .toggle-thumb {
+        width: 14px;
+        height: 14px;
+        font-size: 9px;
+    }
+    
+    .search-box-group {
+        padding: 0 3px;
+    }
+    
+    #suggestions {
+        margin: 0 3px;
+    }
+    
+    #results {
+        margin: 15px 3px 0 3px;
+    }
+    
+    .cluster {
+        padding: 10px 8px;
+        font-size: 0.9rem;
+    }
+    
+    #footer-info {
+        margin: 0 3px 8px 3px;
+        padding: 10px 8px;
+        font-size: 0.75rem;
+    }
+    
+    #pagination {
+        margin: 20px 3px 0 3px;
+        gap: 4px;
+    }
+    
+    .pagination-btn {
+        padding: 8px 10px;
+        min-width: 36px;
+        min-height: 44px;
+        font-size: 0.85rem;
+    }
+}
+
+/* Landscape orientation adjustments */
+@media (max-height: 500px) and (orientation: landscape) {
+    .container {
+        margin-top: 55px;
+    }
+    
+    .header {
+        min-height: 50px;
+        padding: 5px 10px;
+    }
+    
+    .logo {
+        height: 30px;
+    }
+    
+    .title-text {
+        font-size: 0.8rem;
+    }
+    
+    .theme-toggle {
+        top: 55px;
+        width: 40px;
+        height: 20px;
+    }
+    
+    .toggle-thumb {
+        width: 14px;
+        height: 14px;
+        font-size: 10px;
+    }
+    
+    body {
+        padding: 0.5rem 0.3rem;
+    }
+}
+
+/* Dark theme responsive adjustments */
+@media (max-width: 480px) {
+    body.dark-theme #suggestions li {
+        background-color: #2d3748;
+        border-color: #4a5568;
+        color: #e2e8f0;
+    }
+    
+    body.dark-theme .cluster {
+        background-color: #2d3748;
+        border-color: #4299e1;
+        border: 1px solid #4a5568;
+        color: #e2e8f0;
+    }
+    
+    body.dark-theme .dropdown-menu {
+        background: #2d3748;
+        border-color: #4a5568;
+    }
+    
+    body.dark-theme .dropdown-menu a {
+        color: #e2e8f0;
+        border-bottom-color: #4a5568;
+    }
+    
+    body.dark-theme .dropdown-menu a:hover {
+        background: #4a5568;
+    }
+}
+
+/* Focus states for accessibility */
+@media (hover: none) and (pointer: coarse) {
+    button:focus,
+    input:focus,
+    .hamburger:focus,
+    .theme-toggle:focus {
+        outline: 2px solid #4299e1;
+        outline-offset: 2px;
+    }
+    
+    #suggestions li:focus {
+        outline: 2px solid #4299e1;
+        outline-offset: 1px;
+    }
 }

@@ -4,6 +4,29 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchBox = document.getElementById("searchBox");
     const suggestions = document.getElementById("suggestions");
     const results = document.getElementById("results");
+    
+    // Hamburger menu functionality
+    const hamburgerMenu = document.getElementById("hamburgerMenu");
+    const dropdownMenu = document.getElementById("dropdownMenu");
+    
+    if (hamburgerMenu && dropdownMenu) {
+        hamburgerMenu.addEventListener("click", (e) => {
+            e.stopPropagation();
+            dropdownMenu.classList.toggle("show");
+        });
+        
+        // Close dropdown when clicking outside
+        document.addEventListener("click", (e) => {
+            if (!hamburgerMenu.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                dropdownMenu.classList.remove("show");
+            }
+        });
+        
+        // Close dropdown on window resize
+        window.addEventListener("resize", () => {
+            dropdownMenu.classList.remove("show");
+        });
+    }
 
     if (searchBox) {
         searchBox.addEventListener("input", async (e) => {
@@ -195,12 +218,34 @@ function speakWordUS() {
     speechSynthesis.speak(utterance);
 }
 
-//hamburger menu
-document.getElementById('hamburgerMenu').onclick = function() {
-    document.getElementById('dropdownMenu').classList.toggle('show');
-};
-window.onclick = function(e) {
-    if (!e.target.matches('#hamburgerMenu')) {
-        document.getElementById('dropdownMenu').classList.remove('show');
+// Touch event improvements for mobile
+function improveTouch() {
+    // Prevent double-tap zoom on buttons
+    const buttons = document.querySelectorAll('button, .hamburger, .theme-toggle');
+    buttons.forEach(button => {
+        button.addEventListener('touchstart', function(e) {
+            e.preventDefault();
+        }, { passive: false });
+    });
+    
+    // Improve touch targets for suggestions
+    const suggestions = document.getElementById('suggestions');
+    if (suggestions) {
+        suggestions.addEventListener('touchstart', function(e) {
+            if (e.target.tagName === 'LI') {
+                e.target.style.backgroundColor = '#e9ecef';
+            }
+        });
+        
+        suggestions.addEventListener('touchend', function(e) {
+            if (e.target.tagName === 'LI') {
+                setTimeout(() => {
+                    e.target.style.backgroundColor = '';
+                }, 150);
+            }
+        });
     }
-};
+}
+
+// Call on DOM content loaded
+document.addEventListener('DOMContentLoaded', improveTouch);

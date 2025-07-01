@@ -7,6 +7,38 @@
 body, html {
     height: 100%;
     overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.go-back-btn {
+    position: fixed;
+    top: 75px;
+    left: 15px;
+    background: none;
+    border: none;
+    font-size: 1.1rem;
+    color: #072e46;
+    cursor: pointer;
+    padding: 8px;
+    z-index: 1001;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+    touch-action: manipulation;
+    min-height: 44px;
+    min-width: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.go-back-btn:hover {
+    background-color: rgba(7, 46, 70, 0.1);
+}
+.dark-theme .go-back-btn {
+    color: #fff;
+}
+.dark-theme .go-back-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 body {
@@ -37,32 +69,40 @@ body.dark-theme .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 15px;
     background-color: #072e46;
     color: white;
     width: 100%;
+    min-height: 60px;
+    flex-wrap: wrap;
 }
 .header-left {
     display: flex;
     align-items: center;
+    min-width: 0;
+    flex: 1;
 }
 .logo {
-    height: 60px;
-    margin: 0 20px;
+    height: 50px;
+    margin: 0 15px;
+    flex-shrink: 0;
 }
 .title-text {
     font-size: 1.1rem;
     font-weight: 300;
     letter-spacing: 0.5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 /* Theme Toggle */
 .theme-toggle {
     position: fixed;
-    top: 100px;
-    right: 18px;
-    width: 60px;
-    height: 30px;
+    top: 85px;
+    right: 15px;
+    width: 55px;
+    height: 28px;
     background-color: #ccc;
     border-radius: 60px;
     display: flex;
@@ -72,17 +112,18 @@ body.dark-theme .container {
     cursor: pointer;
     border: none;
     z-index: 1001;
+    touch-action: manipulation;
 }
 
 .toggle-thumb {
-    width: 24px;
-    height: 24px;
+    width: 22px;
+    height: 22px;
     border-radius: 50%;
     background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 16px;
+    font-size: 14px;
     transition: transform 0.3s ease;
 }
 
@@ -228,19 +269,257 @@ body.dark-theme .footer {
 }
 
 /* Mobil Uyumluluk */
-@media (max-width: 600px) {
+@media (max-width: 1024px) {
     .container {
-        width: 90%;
+        padding: 15px;
     }
+    
+    .top-header {
+        font-size: 1.8rem;
+    }
+    
+    #loginForm {
+        width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
     .header {
-        flex-direction: column;
-        align-items: flex-start;
+        padding: 8px 12px;
+        min-height: 65px;
     }
-    .theme-toggle {
-        right: 10px;
-        top: 110px;
-    }
+    
     .logo {
         height: 40px;
-    }}
+        margin: 0 10px;
+    }
+    
+    .title-text {
+        font-size: 0.9rem;
+    }
+    
+    .theme-toggle {
+        top: 75px;
+        right: 12px;
+        width: 50px;
+        height: 25px;
+    }
+    
+    .toggle-thumb {
+        width: 19px;
+        height: 19px;
+        font-size: 12px;
+    }
+    
+    .go-back-btn {
+        top: 70px;
+        left: 12px;
+        font-size: 1rem;
+        min-height: 40px;
+        min-width: 40px;
+    }
+    
+    main {
+        padding-top: 100px;
+    }
+    
+    .container {
+        padding: 12px;
+        min-height: 60vh;
+    }
+    
+    .admin-title {
+        font-size: 1.3rem;
+        margin-bottom: 24px;
+    }
+    
+    #loginForm {
+        width: 280px;
+    }
+    
+    #loginForm input {
+        padding: 14px;
+        margin-bottom: 16px;
+        min-height: 48px;
+        font-size: 16px;
+    }
+    
+    .toggle-password {
+        top: 14px;
+        padding: 6px;
+    }
+    
+    #loginForm button[type="submit"] {
+        padding: 14px 20px;
+        min-height: 48px;
+        font-size: 1rem;
+        background-color: #072e46;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+        touch-action: manipulation;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 6px 10px;
+        min-height: 60px;
+    }
+    
+    .logo {
+        height: 35px;
+        margin: 0 8px;
+    }
+    
+    .title-text {
+        font-size: 0.8rem;
+        max-width: calc(100vw - 120px);
+    }
+    
+    .theme-toggle {
+        top: 70px;
+        right: 8px;
+        width: 45px;
+        height: 22px;
+    }
+    
+    .toggle-thumb {
+        width: 16px;
+        height: 16px;
+        font-size: 10px;
+    }
+    
+    .go-back-btn {
+        top: 65px;
+        left: 8px;
+        font-size: 0.9rem;
+        min-height: 36px;
+        min-width: 36px;
+        padding: 6px;
+    }
+    
+    main {
+        padding-top: 80px;
+    }
+    
+    .container {
+        padding: 10px 5px;
+        min-height: 50vh;
+    }
+    
+    .admin-title {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        padding: 0 10px;
+    }
+    
+    #loginForm {
+        width: 100%;
+        max-width: 280px;
+        padding: 0 10px;
+    }
+    
+    #loginForm input {
+        padding: 16px 12px;
+        margin-bottom: 14px;
+        min-height: 52px;
+        font-size: 16px;
+        border-radius: 6px;
+        border: 1px solid #ddd;
+    }
+    
+    .toggle-password {
+        top: 16px;
+        right: 12px;
+        padding: 8px;
+        touch-action: manipulation;
+    }
+    
+    #loginForm button[type="submit"] {
+        padding: 16px 24px;
+        min-height: 52px;
+        font-size: 1rem;
+        width: 100%;
+    }
+    
+    .login-btn-row {
+        justify-content: center;
+    }
+    
+    #errorMsg {
+        font-size: 0.85rem;
+        margin-top: 15px;
+    }
+    
+    .footer {
+        padding: 8px 5px;
+        font-size: 0.75rem;
+    }
+    
+    #footer-info {
+        margin: 0 5px 8px 5px;
+        padding: 12px 8px;
+        font-size: 0.8rem;
+        line-height: 1.4;
+    }
+}
+
+@media (max-width: 360px) {
+    .title-text {
+        font-size: 0.75rem;
+        max-width: calc(100vw - 100px);
+    }
+    
+    .logo {
+        height: 30px;
+        margin: 0 5px;
+    }
+    
+    .theme-toggle {
+        width: 40px;
+        height: 20px;
+        right: 5px;
+    }
+    
+    .toggle-thumb {
+        width: 14px;
+        height: 14px;
+        font-size: 9px;
+    }
+    
+    .go-back-btn {
+        min-height: 32px;
+        min-width: 32px;
+        font-size: 0.8rem;
+        left: 5px;
+    }
+    
+    .container {
+        padding: 8px 3px;
+    }
+    
+    .admin-title {
+        font-size: 1.1rem;
+        margin-bottom: 16px;
+    }
+    
+    #loginForm {
+        max-width: 260px;
+        padding: 0 5px;
+    }
+    
+    #loginForm input {
+        padding: 14px 10px;
+        font-size: 16px;
+    }
+    
+    #footer-info {
+        margin: 0 3px 8px 3px;
+        padding: 10px 6px;
+        font-size: 0.75rem;
+    }
+}
     
