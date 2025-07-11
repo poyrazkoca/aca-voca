@@ -1,10 +1,8 @@
 <?php
-// Sadece POST isteklerine izin ver
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $data = file_get_contents("php://input");
-    $filePath = "thesaurus.txt";  // thesaurus.txt, public klasördeyse
+    $filePath = "thesaurus.txt";
 
-    // Dosyaya yaz
     if (file_put_contents($filePath, $data) !== false) {
         echo "Saved successfully!";
     } else {
