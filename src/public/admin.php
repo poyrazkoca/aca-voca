@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $password = $_POST['password'] ?? '';
 
     // Burada gerçek kullanıcı adı ve şifre kontrolü yapılır
-    if ($username === 'admin' && $password === 'admin123') {
+    if ($username === 'kullaniciadi' && $password === 'sifre') {
         $_SESSION['admin'] = true;
         header("Location: panel.html");
         exit;
