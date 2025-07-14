@@ -1,3 +1,29 @@
+<?php
+session_start();
+
+// Giriş kontrolü yapılmışsa doğrudan panele yönlendir
+if (isset($_SESSION['admin']) && $_SESSION['admin'] === true) {
+    header("Location: panel.html");
+    exit;
+}
+
+$error = '';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $username = $_POST['username'] ?? '';
+    $password = $_POST['password'] ?? '';
+
+    // Burada gerçek kullanıcı adı ve şifre kontrolü yapılır
+    if ($username === 'admin' && $password === 'admin123') {
+        $_SESSION['admin'] = true;
+        header("Location: panel.html");
+        exit;
+    } else {
+        $error = "The username or password is incorrect.";
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,6 +58,11 @@
             text-decoration: none;
             text-decoration: underline;
         }
+        #errorMsg {
+            color: red;
+            margin-top: 10px;
+            font-size: 0.9em;
+        }
     </style>
 </head>
 <body>
@@ -42,27 +73,31 @@
         <span class="title-text">Academic Vocabulary Search Engine</span>
     </div>
 </header>
+
 <!-- Go Back Button -->
 <button class="go-back-btn" onclick="window.location.href='index.html'">❮❮ Go Home</button>
+
 <!-- Theme Toggle -->
 <div class="theme-toggle" onclick="toggleTheme()">
     <div class="toggle-thumb" id="themeEmoji">🌞</div>
 </div>
+
 <!-- Main Content -->
 <div class="main-content">
-
     <div class="container">
         <div class="admin-title">Admin Panel</div>
-        <form id="loginForm">
-            <input type="text" id="username" placeholder="username" required>
+        <form id="loginForm" method="POST" action="admin.php">
+            <input type="text" name="username" id="username" placeholder="username" required>
             <div class="password-wrapper">
-                <input type="password" id="password" placeholder="password" required>
+                <input type="password" name="password" id="password" placeholder="password" required>
                 <span class="toggle-password" onclick="togglePassword()">👀</span>
             </div>
             <div class="login-btn-row">
                 <button type="submit">Log In</button>
             </div>
-            <p id="errorMsg"></p>
+            <?php if ($error): ?>
+                <p id="errorMsg"><?= htmlspecialchars($error) ?></p>
+            <?php endif; ?>
         </form>
     </div>
 </div>
@@ -74,22 +109,6 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', applyTheme);
-
-    const form = document.getElementById('loginForm');
-    const errorMsg = document.getElementById('errorMsg');
-
-    form.addEventListener('submit', function (e) {
-        e.preventDefault();
-        const user = document.getElementById('username').value.trim();
-        const pass = document.getElementById('password').value.trim();
-
-        if (user === 'admin' && pass === 'admin123') {
-            sessionStorage.setItem('auth', 'true');
-            window.location.href = 'panel.html';
-        } else {
-            errorMsg.textContent = 'The username or password is incorrect';
-        }
-    });
 
     function toggleTheme() {
         const body = document.body;

@@ -1,4 +1,12 @@
-<!-- panel.html (güncellenmiş hali, dosya yükleme destekli) -->
+<?php
+session_start();
+
+if (!isset($_SESSION['admin']) || $_SESSION['admin'] !== true) {
+    header("Location: admin.php");
+    exit;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,11 +50,20 @@
             display: none;
             text-align: center;
         }
+        .logout-btn {
+            float: right;
+            background-color: #e57373;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
 <div class="container">
-    <h1>Admin Panel</h1>
+    <h1>Admin Panel
+        <button class="logout-btn" onclick="window.location.href='logout.php'">Logout</button>
+    </h1>
 
     <textarea id="thesaurusBox" placeholder="Edit thesaurus.txt content here..."></textarea>
     <div class="status" id="statusMessage"></div>
