@@ -2,31 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>acavoca</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>ACA-VOCA | Academic Vocabulary Search Engine for Formal Synonyms</title>
+
+    <meta name="description" content="ACA-VOCA is an academic vocabulary search engine that helps you find formal synonyms for academic writing.">
+    <meta name="keywords" content="academic vocabulary, synonym search, formal synonyms, thesaurus, academic writing">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="ACA-VOCA | Academic Vocabulary Search Engine">
+    <meta property="og:description" content="Find formal synonyms for academic words to improve your writing.">
+    <meta property="og:url" content="https://acavoca.com/">
+
+    <!-- Favicon and Styles -->
     <link rel="icon" href="favicon.png">
     <link rel="stylesheet" href="style.css">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "ACA-VOCA",
+            "url": "https://acavoca.com",
+            "description": "Academic vocabulary search engine for finding formal synonyms.",
+            "author": {
+                "@type": "Person",
+                "name": "Poyraz Koca"
+            }
+        }
+    </script>
 </head>
 <body>
-
-<meta name="description" content="Academic vocabulary search engine for finding the words' formal synonyms">
-<meta name="keywords" content="synonym, academic, vocabulary, thesaurus, formal synonyms">
-<meta name="robots" content="index, follow">
-<meta property="og:title" content="ACA-VOCA">
-<meta property="og:description" content="Academic vocabulary search engine for formal synonyms.">
-<meta property="og:url" content="https://acavoca.com/">
 
 <!-- Header -->
 <header class="header">
     <div class="header-left">
-        <img src="logo.png" alt="Logo" class="logo">
+        <img src="logo.png" alt="ACA-VOCA Logo" class="logo">
         <span class="title-text">Academic Vocabulary Search Engine</span>
-    </div>    <nav class="header-right">
-        <div class="hamburger" id="hamburgerMenu">☰</div>
-        <div class="dropdown-menu" id="dropdownMenu">
-            <a href="admin.php">Update Vocabulary Memory</a>
-        </div>
-    </nav>
+    </div>
+
 </header>
 
 <!-- Theme Toggle -->
@@ -46,6 +66,10 @@
                     id="searchBox"
                     placeholder="Search a word..."
                     autocomplete="off"
+                    autocapitalize="off"
+                    autocorrect="off"
+                    spellcheck="false"
+                    inputmode="text"
                     onkeydown="if(event.key==='Enter'){performSearch(this.value)}"
             >
             <button
@@ -57,7 +81,7 @@
                         onclick="speakWordUS(currentWord)"
                         title="US pronunciation"
                         id="usPronounce"
-                >Listen pronounciation 🔊</button>
+                >Listen pronunciation 🔊</button>
             </div>
         </div>
     </div>
@@ -82,9 +106,9 @@
 <!-- Footer -->
 <footer class="footer">
     <p style="font-size: 0.9em;">
-        Copyright © 2025 - Academic Vocabulary - Last update date: June 2025
+        Copyright © 2025 - Academic Vocabulary - Last update date: July 2025
     </p>
-    <p style="font-size: 0.7em;">
+    <p style="font-size: 0.9em;">
         Developed by
         <a href="https://www.linkedin.com/in/poyrazkoca/" target="_blank">Poyraz Koca</a>
     </p>

@@ -8,51 +8,83 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchBox = document.getElementById("searchBox");
     const suggestions = document.getElementById("suggestions");
 
-    const hamburgerMenu = document.getElementById("hamburgerMenu");
-    const dropdownMenu = document.getElementById("dropdownMenu");
-
-    if (hamburgerMenu && dropdownMenu) {
-        hamburgerMenu.addEventListener("click", (e) => {
-            e.stopPropagation();
-            dropdownMenu.classList.toggle("show");
-        });
-        document.addEventListener("click", (e) => {
-            if (!hamburgerMenu.contains(e.target) && !dropdownMenu.contains(e.target)) {
-                dropdownMenu.classList.remove("show");
-            }
-        });
-        window.addEventListener("resize", () => {
-            dropdownMenu.classList.remove("show");
-        });
-    }
-
     if (searchBox) {
+        let selectedSuggestion = -1;
+        
         searchBox.addEventListener("input", (e) => {
             const query = e.target.value.trim();
+            selectedSuggestion = -1;
             if (query.length < 2) {
                 suggestions.innerHTML = "";
                 return;
             }
             const data = suggest(query);
             suggestions.innerHTML = "";
-            data.forEach(word => {
+            data.forEach((word, index) => {
                 const li = document.createElement("li");
                 li.textContent = word;
+                li.setAttribute('data-index', index);
                 li.addEventListener("click", () => {
                     searchBox.value = word;
                     suggestions.innerHTML = "";
                     performSearch(word);
+                    searchBox.blur(); // Close mobile keyboard
                 });
                 suggestions.appendChild(li);
             });
         });
 
         searchBox.addEventListener("keydown", (e) => {
+            const suggestionItems = suggestions.querySelectorAll('li');
+            
             if (e.key === "Enter") {
-                performSearch(searchBox.value.trim());
+                e.preventDefault();
+                if (selectedSuggestion >= 0 && suggestionItems[selectedSuggestion]) {
+                    searchBox.value = suggestionItems[selectedSuggestion].textContent;
+                    performSearch(suggestionItems[selectedSuggestion].textContent);
+                } else {
+                    performSearch(searchBox.value.trim());
+                }
                 suggestions.innerHTML = "";
+                searchBox.blur(); // Close mobile keyboard
+                selectedSuggestion = -1;
+            } else if (e.key === "ArrowDown") {
+                e.preventDefault();
+                selectedSuggestion = Math.min(selectedSuggestion + 1, suggestionItems.length - 1);
+                updateSuggestionSelection(suggestionItems);
+            } else if (e.key === "ArrowUp") {
+                e.preventDefault();
+                selectedSuggestion = Math.max(selectedSuggestion - 1, -1);
+                updateSuggestionSelection(suggestionItems);
+            } else if (e.key === "Escape") {
+                suggestions.innerHTML = "";
+                selectedSuggestion = -1;
+                searchBox.blur();
             }
         });
+
+        // Handle focus events for mobile
+        searchBox.addEventListener("focus", () => {
+            // Scroll to top on mobile when search is focused
+            if (window.innerWidth <= 768) {
+                setTimeout(() => {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }, 300);
+            }
+        });
+        
+        // Function to update suggestion selection
+        function updateSuggestionSelection(items) {
+            items.forEach((item, index) => {
+                if (index === selectedSuggestion) {
+                    item.style.backgroundColor = '#072e46';
+                    item.style.color = 'white';
+                } else {
+                    item.style.backgroundColor = '';
+                    item.style.color = '';
+                }
+            });
+        }
     }
 });
 
@@ -102,26 +134,53 @@ let currentPage = 1;
 const clustersPerPage = 5;
 
 async function loadThesaurusFile() {
-    const response = await fetch("thesaurus.txt");
-    const text = await response.text();
-    const lines = text.split('\n');
     wordClusters = [];
     wordToClusters = {};
-    for (const line of lines) {
-        const clean = line.trim();
-        if (!clean) continue;
-        const tokens = clean.split("-");
-        const words = tokens.slice(1).map(w => w.trim()).filter(Boolean);
-        if (words.length === 0) continue;
-        const cluster = { words: words };
-        wordClusters.push(cluster);
-        words.forEach(word => {
-            const key = word.toLowerCase();
-            if (!wordToClusters[key]) wordToClusters[key] = [];
-            wordToClusters[key].push(cluster);
-        });
+    
+    // Ana thesaurus.txt dosyasını yükle
+    await loadSingleThesaurusFile("thesaurus.txt");
+    
+    // Diğer thesaurus dosyalarını yüklemeye çalış (thesaurus1.txt, thesaurus2.txt, vb.)
+    for (let i = 1; i <= 100; i++) {
+        try {
+            await loadSingleThesaurusFile(`thesaurus${i}.txt`);
+        } catch (error) {
+            // Dosya bulunamadığında sessizce devam et
+            console.log(`thesaurus${i}.txt file not found, skipping...`);
+        }
     }
-    console.log(`Loaded ${wordClusters.length} word clusters.`);
+    
+    console.log(`Loaded ${wordClusters.length} word clusters from all thesaurus files.`);
+}
+
+async function loadSingleThesaurusFile(filename) {
+    try {
+        const response = await fetch(filename);
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const text = await response.text();
+        const lines = text.split('\n');
+        
+        for (const line of lines) {
+            const clean = line.trim();
+            if (!clean) continue;
+            const tokens = clean.split("-");
+            const words = tokens.slice(1).map(w => w.trim()).filter(Boolean);
+            if (words.length === 0) continue;
+            const cluster = { words: words };
+            wordClusters.push(cluster);
+            words.forEach(word => {
+                const key = word.toLowerCase();
+                if (!wordToClusters[key]) wordToClusters[key] = [];
+                wordToClusters[key].push(cluster);
+            });
+        }
+        console.log(`Successfully loaded ${filename}`);
+    } catch (error) {
+        console.log(`Failed to load ${filename}:`, error.message);
+        throw error;
+    }
 }
 
 function suggest(prefix) {
@@ -229,25 +288,85 @@ function speakWordUS() {
 }
 
 function improveTouch() {
-    const buttons = document.querySelectorAll('button, .hamburger, .theme-toggle');
+    // Prevent double-tap zoom
+    let lastTouchEnd = 0;
+    document.addEventListener('touchend', function (event) {
+        const now = (new Date()).getTime();
+        if (now - lastTouchEnd <= 300) {
+            event.preventDefault();
+        }
+        lastTouchEnd = now;
+    }, false);
+
+    // Improve button touch response
+    const buttons = document.querySelectorAll('button, .theme-toggle');
     buttons.forEach(button => {
         button.addEventListener('touchstart', function(e) {
-            e.preventDefault();
-        }, { passive: false });
+            this.style.opacity = '0.7';
+        }, { passive: true });
+        
+        button.addEventListener('touchend', function(e) {
+            this.style.opacity = '1';
+        }, { passive: true });
+        
+        button.addEventListener('touchcancel', function(e) {
+            this.style.opacity = '1';
+        }, { passive: true });
     });
+
+    // Improve suggestions touch response
     const suggestions = document.getElementById('suggestions');
     if (suggestions) {
         suggestions.addEventListener('touchstart', function(e) {
             if (e.target.tagName === 'LI') {
                 e.target.style.backgroundColor = '#e9ecef';
+                e.target.style.transform = 'scale(0.98)';
             }
-        });
+        }, { passive: true });
+        
         suggestions.addEventListener('touchend', function(e) {
             if (e.target.tagName === 'LI') {
                 setTimeout(() => {
                     e.target.style.backgroundColor = '';
+                    e.target.style.transform = 'scale(1)';
                 }, 150);
             }
-        });
+        }, { passive: true });
+        
+        suggestions.addEventListener('touchcancel', function(e) {
+            if (e.target.tagName === 'LI') {
+                e.target.style.backgroundColor = '';
+                e.target.style.transform = 'scale(1)';
+            }
+        }, { passive: true });
     }
+
+    // Improve result words touch response
+    document.addEventListener('touchstart', function(e) {
+        if (e.target.classList.contains('result-word')) {
+            e.target.style.opacity = '0.7';
+        }
+    }, { passive: true });
+    
+    document.addEventListener('touchend', function(e) {
+        if (e.target.classList.contains('result-word')) {
+            e.target.style.opacity = '1';
+        }
+    }, { passive: true });
+
+    // Prevent iOS bounce effect
+    document.body.addEventListener('touchmove', function(e) {
+        if (e.target === document.body) {
+            e.preventDefault();
+        }
+    }, { passive: false });
+
+    // Handle orientation change
+    window.addEventListener('orientationchange', function() {
+        // Force resize after orientation change
+        setTimeout(() => {
+            window.scrollTo(0, 1);
+            window.scrollTo(0, 0);
+        }, 100);
+    });
 }
