@@ -2,8 +2,7 @@
 
 **ACA-VOCA** is a lightweight, responsive, and fully client-side academic vocabulary search engine. It allows users to search, explore, and interact with a curated database of academic words — all powered through a fast and user-friendly web interface.
 
-🌐 **Live Demo:** ...link gelecek...
-
+🌐 **Live Demo:** acavoca.com
 ---
 
 ## 🚀 Features
@@ -15,9 +14,8 @@
 
 ## 🛠️ Technologies Used
 
-- **Frontend:** HTML5, CSS3, JavaScript, Bootstrap 5
+- **Frontend:** HTML5, CSS3, JavaScript, PHP
 - **Backend:** .txt files for vocabulary memory
 - **AJAX**: Seamless dynamic page updates
 - **Version Control:** Git, GitHub
-- **Hosting:** GitHub Pages + Custom Domain ...link gelecek...
 ---
